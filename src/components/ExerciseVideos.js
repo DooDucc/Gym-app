@@ -13,7 +13,7 @@ const ExerciseVideos = ({ exerciseVideos, name }) => {
                 flexWrap="wrap"
                 alignItems="center"
             >
-                {exerciseVideos?.slice(0, 3)?.map((item, index) => (
+                {exerciseVideos?.slice(0, 6)?.map((item, index) => (
                     <a
                         key={index}
                         className="exercise-video"
@@ -22,7 +22,7 @@ const ExerciseVideos = ({ exerciseVideos, name }) => {
                         rel="noreferrer"
                     >
                         <img
-                            style={{ borderTopLeftRadius: '20px' }}
+                            style={{ borderRadius: '20px' }}
                             src={item.video.thumbnails[0].url}
                             alt={item.video.title}
                         />
